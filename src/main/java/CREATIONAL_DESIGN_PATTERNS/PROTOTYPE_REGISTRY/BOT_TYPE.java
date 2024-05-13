@@ -1,0 +1,6 @@
+package CREATIONAL_DESIGN_PATTERNS.PROTOTYPE_REGISTRY;
+
+public enum BOT_TYPE {
+    PLAYER,
+    CAR
+}
