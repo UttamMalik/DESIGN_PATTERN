@@ -1,0 +1,18 @@
+package CREATIONAL_DESIGN_PATTERNS.FACTORY.Abstract_Factory;
+
+import CREATIONAL_DESIGN_PATTERNS.FACTORY.COMPONENT.QUERY;
+import CREATIONAL_DESIGN_PATTERNS.FACTORY.COMPONENT.SQL_TRANSACTION;
+import CREATIONAL_DESIGN_PATTERNS.FACTORY.COMPONENT.SQL_query;
+import CREATIONAL_DESIGN_PATTERNS.FACTORY.COMPONENT.TRANSACTION;
+
+public class RELATIONAL_FACTORY extends ABSTRACT_FACTORY {
+    @Override
+    public QUERY createQuery() {
+        return new SQL_query();
+    }
+
+    @Override
+    public TRANSACTION createThransaction() {
+        return new SQL_TRANSACTION();
+    }
+}
